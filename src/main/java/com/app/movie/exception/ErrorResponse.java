@@ -6,14 +6,17 @@ import java.time.ZonedDateTime;
 
 public class ErrorResponse {
     private final String message;
-    private final HttpStatus status;
-    private final Integer statusCode;
+    private final HttpStatus httpStatus;
+    private final Integer httpStatusCode;
     private final ZonedDateTime timestamp;
 
-    public ErrorResponse(String message, HttpStatus status, Integer statusCode, ZonedDateTime timestamp) {
+    public ErrorResponse(String message,
+                            HttpStatus httpStatus,
+                            Integer httpStatusCode,
+                            ZonedDateTime timestamp) {
         this.message = message;
-        this.status = status;
-        this.statusCode = statusCode;
+        this.httpStatus = httpStatus;
+        this.httpStatusCode = httpStatusCode;
         this.timestamp = timestamp;
     }
 
@@ -21,12 +24,12 @@ public class ErrorResponse {
         return message;
     }
 
-    public HttpStatus getStatus() {
-        return status;
+    public HttpStatus getHttpStatus() {
+        return httpStatus;
     }
 
-    public Integer getStatusCode() {
-        return statusCode;
+    public Integer getHttpStatusCode() {
+        return httpStatusCode;
     }
 
     public ZonedDateTime getTimestamp() {
