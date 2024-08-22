@@ -10,8 +10,8 @@
     "title": "Movie",
     "rating": 3.5,
     "categories": [ "Action", "Adventure" ]
-    } 
-```
+    }
+    ```
   - expected response: 
 + GET: /api/movies/{id} (movie by id)
 + POST: /api/movie/create (create new movie)
