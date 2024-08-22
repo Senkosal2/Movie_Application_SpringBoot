@@ -30,8 +30,6 @@ public class Movie {
     }
 
     public void setRating(Double rating) {
-        if (rating < 0.5) throw new RuntimeException("Rating must be greater than or equal to " + 0.5);
-        else if (rating > 5) throw new RuntimeException("Rating must be less than or equal to " + 5);
         this.rating = rating;
     }
 
