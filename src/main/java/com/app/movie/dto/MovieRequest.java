@@ -29,6 +29,12 @@ public class MovieRequest {
         this.categories = categories;
     }
 
+    public MovieRequest(String title, Double rating, List<Object> categories) {
+        this.title = title;
+        this.rating = rating;
+        this.categories = categories;
+    }
+
     public Integer getId() {
         return id;
     }
