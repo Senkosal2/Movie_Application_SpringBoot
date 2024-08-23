@@ -1,5 +1,13 @@
 ### Spring Boot Project
-
+update MySQL connection in application.properties
+* database: db_movie_api
+* username: root
+* password: Root.1234
+```
+spring.datasource.url=jdbc:mysql://localhost:3306/db_movie_api 
+spring.datasource.username=root
+spring.datasource.password=Root.1234
+```
 
 ## API End Point
 + GET: /api/movies
