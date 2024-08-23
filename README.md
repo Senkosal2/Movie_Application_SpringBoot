@@ -56,5 +56,8 @@
     ```
   - expected response: 200
 + PUT: /api/movie/update/{id} (update movie entirely)
+  - description: update existed movie entirely, any field not provide will be null
+  - request body:
+  - expected response: 
 + PATCH: /api/movie/update/{id} (update movie partiailly)
 + DELETE: /api/movie/delete/{id} (delete movie by id)
