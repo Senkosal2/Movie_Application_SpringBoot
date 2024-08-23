@@ -51,4 +51,16 @@ public class Movie {
 
     public Movie() {}
 
+    public Movie(Integer id, String title, Double rating, List<Category> categories) {
+        this.id = id;
+        this.title = title;
+        this.rating = rating;
+        this.categories = categories;
+    }
+
+    public Movie(String title, Double rating, List<Category> categories) {
+        this.title = title;
+        this.rating = rating;
+        this.categories = categories;
+    }
 }
