@@ -4,18 +4,29 @@
 ## API End Point
 + GET: /api/movies
   - description: retrieve all movies
-  - request body:
-    ```
-    {
-      "title": "Movie",
-      "rating": 3.5,
-      "categories": [ "Action", "Adventure" ]
-    }
-    ```
   - expected response: 200
+    ```
+    [
+        {
+            "id": 1,
+            "title": "Movie",
+            "rating": 3.5,
+            "categories": [
+                {
+                    "id": 1,
+                    "categoryName": "Action"
+                },
+                {
+                    "id": 2,
+                    "categoryName": "Adventure"
+                }
+            ]
+        }
+    ]
+    ```
 + GET: /api/movies/{id}
   - description: retrieve movie by id
-  - expected response:
+  - expected response: 200
     ```
     {
         "id": 1,
