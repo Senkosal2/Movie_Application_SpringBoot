@@ -25,21 +25,21 @@
     ]
     ```
 + GET: /api/movies/{id}
-  - description: retrieve movie by id
+  - description: retrieve movie by id, suppose id is 1
   - expected response: 200
     ```
     {
         "id": 1,
-        "title": "Movie 1",
-        "rating": 1.0,
+        "title": "Movie",
+        "rating": 3.5,
         "categories": [
             {
                 "id": 1,
-                "categoryName": "Adventure"
+                "categoryName": "Action"
             },
             {
                 "id": 2,
-                "categoryName": "Action"
+                "categoryName": "Adventure"
             }
         ]
     }
