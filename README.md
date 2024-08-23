@@ -1,4 +1,5 @@
 ### Spring Boot Project
+for more details documentation (when run application): (http://localhost:8080/swagger-ui/index.html)
 update MySQL connection in application.properties
 * database: db_movie_api
 * username: root
