@@ -44,7 +44,17 @@
         ]
     }
     ```
-+ POST: /api/movie/create (create new movie)
++ POST: /api/movie/create
+  - description: create a new movie
+  - request body:
+    ```
+    {
+        "title": "Movie",
+        "rating": 3.5,
+        "categories": [ "Action", "Adventure" ]
+    }
+    ```
+  - expected response: 200
 + PUT: /api/movie/update/{id} (update movie entirely)
 + PATCH: /api/movie/update/{id} (update movie partiailly)
 + DELETE: /api/movie/delete/{id} (delete movie by id)
