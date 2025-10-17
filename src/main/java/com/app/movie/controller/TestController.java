@@ -1,15 +1,15 @@
 package com.app.movie.controller;
 
-import org.springframework.web.bind.annotation.RestController;
+import org.springframework.stereotype.Controller;
 import org.springframework.web.bind.annotation.GetMapping;
 
 
-@RestController
+@Controller
 public class TestController {
     
     @GetMapping
     public String test() {
-        return new String("Hello");
+        return "redirect:/swagger-ui/index.html";
     }
     
 }
